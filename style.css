@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fullwebside{
+    width: 1000px;
+    margin: auto;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: gold;
+    margin: 20px 0;
+}
+h1::before{
+    content:"Video ";
+    color: goldenrod;
+}
+h1::after{
+    content:" Class-13";
+    color: goldenrod;
+}
+.para{
+    width: inherit;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+.para h2{
+    text-align: left;
+    font-size: 30px;
+}
+.para p{
+    margin: 10px 10px;
+    font-size: 20px;
+}
+.para p::before{
+    content: '"';
+    font-size: 25px;
+}
+.para p::after{
+    content: '"';
+    font-size: 25px;
+}
+/* ==================
+        list_1
+=================== */
+.list_1{
+    width: 220px;
+    height: 100px;
+    margin: 20px;
+    transition: .5s;
+    border: 1px solid #ddd;
+    display: inline-block;
+}
+.list_1:hover{    
+    box-shadow: 2px 3px 10px grey;
+}
+.list_1 ul{
+    list-style-type: none;
+}
+.list_1 ul li::before{
+    content:"\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    margin-right: 5px;
+    color: black;
+    font-size: 15px;
+}
+/* ==================
+        list_2
+=================== */
+.list_2{
+    width: 220px;
+    height: 100px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    transition: .5s;
+    display: inline-block;
+}
+.list_2:hover{    
+    box-shadow: 2px 3px 10px grey;
+}
+.list_2 ul{
+    list-style-type: none;
+}
+.list_2 ul li::before{
+    content:"\f560";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    margin-right: 5px;
+    color: rgb(255, 191, 0);
+    font-size: 15px;
+}
+/* ==================
+        list_3
+=================== */
+.list_3{
+    width: 220px;
+    height: 100px;
+    border: 1px solid #ddd;
+    transition: .5s;
+    margin: 20px;
+    display: inline-block;
+}
+.list_3:hover{    
+    box-shadow: 2px 3px 10px grey;
+}
+.list_3 ul{
+    list-style-type: none;
+}
+.list_3 ul li::before{
+    content:"\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    margin-right: 5px;
+    color: rgb(212, 0, 57);
+    font-size: 15px;
+}
+/*==============
+     botton_1
+===============*/
+.btn_1{
+    margin: 50px 00px;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn_1 a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: green;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative; 
+    z-index: 1;    
+}
+.btn_1 a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 1s;
+}
+.btn_1 a:hover::before{
+    background: rgb(254, 62, 62);
+    width: 100%;
+    box-shadow: 0px 2px 10px black;
+
+}
+/*==================
+     botton_2 
+==================*/
+.btn_2{
+    margin: 50px 00px;
+    text-align: center;
+    display: inline-block;
+}
+.btn_2 a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: green;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative; 
+    z-index: 1;    
+}
+.btn_2 a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 1s;
+}
+.btn_2 a:hover::before{
+    background: rgb(254, 62, 62);
+    width: 100%;
+    box-shadow: 0px 2px 10px black;
+}
+/*==================== 
+      botton_3 
+====================*/
+.btn_3{
+    margin: 50px 00px;
+    text-align: center;
+    display: inline-block;
+}
+.btn_3 a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: green;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative; 
+    z-index: 1;    
+}
+.btn_3 a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 1s;
+}
+.btn_3 a:hover::before{
+    background: rgb(254, 62, 62);
+    height: 100%;
+    box-shadow: 0px 2px 10px black;
+}
+/*====================
+      botton_4 
+====================*/
+.btn_4{
+    margin: 50px 00px;
+    text-align: center;
+    display: inline-block;
+}
+.btn_4 a{
+    
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: green;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative; 
+    z-index: 1;    
+}
+.btn_4 a::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 1s;
+}
+.btn_4 a:hover::before{
+    background: rgb(254, 62, 62);
+    height: 100%;
+    box-shadow: 0px 2px 10px black;
+}
+/*====================
+     botton_5 
+====================*/
+.btn_5{
+    margin: 50px 00px;
+    text-align: center;
+    display: inline-block;
+}
+.btn_5 a{
+    
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: green;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative; 
+    z-index: 1;    
+}
+.btn_5 a::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    z-index: -1;
+    transition: 1s;
+}
+.btn_5 a:hover::before{
+    background: rgb(254, 62, 62);
+    width: 50%;
+}
+.btn_5 a::after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    z-index: -1;
+    transition: 1s;
+}
+.btn_5 a:hover::after{
+    background: rgb(254, 62, 62);
+    width: 50%;
+}
